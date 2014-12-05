@@ -1,3 +1,18 @@
+Owlgraph
+====================
+
+Owlgraph is a program for visualizing real-time arithmetic operations on
+graphs. The user can create graphs, find their properties (i.e. minimal
+spanning tree or shortest path) and see how those properties change as the
+graph is manipulated (i.e. adding or subtracting nodes and edges). The user can
+look at as many properties at once as they like. Graphlab also allows
+properties to be composed (i.e. find the minimal spanning tree of the largest
+k-core in a graph.) All of this is packaged into a powerful, intuitive
+interface.
+
+Installation
+=======================
+
 Using Owl Graph in Windows:
 
 Owl Graph is a collection of Python scripts employing numpy and pygtk. As such, running Owl Graph requires the following:
