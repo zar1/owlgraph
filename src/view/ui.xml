@@ -1,0 +1,16 @@
+<ui>
+  <menubar Name="MainMenuBar">
+    <menu action="File">
+      <menuitem name="New Workspace" action="New" />
+      <menuitem name="Save Workspace" action="Save" />
+      <menuitem name="Save Workspace As:" action="SaveAs" />
+      <menuitem name="Open Workspace" action="Load" />
+      <menuitem name="Export As Picture" action="SavePicture" />
+      <menuitem name="Quit" action="Quit" />
+    </menu>
+    <menu action="Help">
+      <menuitem name="OHelp" action="OHelp" />
+      <menuitem name="About" action="About" />
+    </menu>
+  </menubar>
+</ui>

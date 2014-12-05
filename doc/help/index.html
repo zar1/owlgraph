@@ -1,0 +1,272 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.2  (Linux)">
+	<META NAME="AUTHOR" CONTENT="zach ">
+	<META NAME="CREATED" CONTENT="20100723;12423000">
+	<META NAME="CHANGEDBY" CONTENT="zach ">
+	<META NAME="CHANGED" CONTENT="20100723;13490600">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin: 0.79in }
+		P { margin-bottom: 0.08in }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4><B>OwlGraph
+User Manual</B></FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-weight: normal">	Owlgraph
+belongs to the gargantuan class of graph viewer applications. It
+differs from most of them in its ability to display “transforms”
+of arbitrary graphs, and then recalculate those transforms in
+real-time as the user modifies the original graph.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-weight: normal"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal">
+	Owlgraph is a python-gtk project written by Zachary Rubenstein
+largely at the service of the Rice University VIGRE program. It was
+starting in Spring 2010.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal">
+<BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal"><B>Opening
+OwlGraph</B></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal">
+	Owlgraph is a python script. To start Owlgraph, run owlgraph.py in
+the program's root directory with python. See README in the program's
+root directory for installation instructions.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal">
+<BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal"><B>Using
+the Workspace</B></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal">
+<BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal">
+	When Owlgraph opens, the majority of the window is taken up by a
+blank workspace. You may clear the workspace at any time with
+file-&gt;New.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal">
+<BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal">
+	The general operation of Owlgraph follows the following schema:</P>
+<OL>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal">
+	Select the object which you wish to work with on the workspace.</P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal">
+	Right click on the workspace to bring up the context menu for that
+	object</P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal">
+	Select the operation which you wish to perform.</P>
+</OL>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal">
+<BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal">
+	Objects that can be selected include: nothing, a graph or transform
+of a graph, a number of graphs and transforms in any combination, a
+vertex on a graph or transform, and a number of vertices on a graph
+or transform.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal">
+<BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal">
+	If an object has a filled box in the lower-right hand corner, that
+object can be resized by clicking and dragging the box. Objects can
+be moved by clicking and dragging a portion of the object that is not
+in said filled box. Vertices in transforms cannot be moved or resized
+independently, but they will reflect changes in the original graph.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal">
+<BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal"><B>Using
+the Menu</B></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+File →</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	New: Clear the current workspace</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Save Workspace: Save the layout of the current workspace to a .ogr
+file 
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Save Workspace As: As above, but the .ogr file can be respecified</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Open Workspace: Replace the current workspace with one specified in
+an .ogr file</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Export as Picture: Save the current workspace as a .png or .jpg.
+(The type of picture is judged according the the specified file
+extension. Owlgraph will choose .png if a valid extension is not
+chosen manually.)</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Quit: Exit Owlgraph</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+Help → 
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Owlgraph Help: Open this document.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	About Owlgraph: Summon the “about” dialog.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+<BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<B>Non-Transform Operations</B></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Each of these transforms is available if the specified object is
+highlighted or if a child of the specified object is highlighted.
+(Graphs and transforms are children of “nothing” vertices are
+children of their respective graphs and transforms.)</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+<BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-weight: normal; text-decoration: none">
+<I>Nothing:</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-weight: normal; text-decoration: none">
+<I>	</I><SPAN STYLE="font-style: normal">New Graph: Creates a New
+graph at the position of the right click. In the “New Graph”
+dialog, the user may specify a number of nodes to initialize with
+this graph, and, if edge probability is set greater than 0, the new
+graph will be a Bernoulli random graph with the specified edge
+probability.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-weight: normal; text-decoration: none">
+<I>Graph and Transforms:</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-weight: normal; text-decoration: none">
+<I>	</I><SPAN STYLE="font-style: normal">Hide: Hide this graph or
+transform. When the graph or transform is again selected, with option
+to unhide the graph will be available. A hidden graph has only a
+restricted set of operations available.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Add Point: Insert a new vertex into the graph at the position of the
+right click. This is not available for transforms.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Delete Graph: Remove this graph or transform and all transforms of
+the graph or transform from the workspace.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	[Create Transform]: In addition to these options, a number of
+transforms are available. These create a transform of the original
+graph or transform at the position of the right click. The figure
+depicted in the transform will be the original graph or transform,
+with edges and vertices selected by some operation specified by the
+particular transform chosen. For instance, the “Spanning tree”
+transform will highlight a spanning tree of the transformed graph or
+transform. Some of these transforms will break if some number of
+vertices of the graph or transform to be transformed are not
+selected. These transforms are recalculated when a change is made to
+the original graph.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-weight: normal; text-decoration: none">
+<I>Vertices:</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Remove Point: Removes the vertex from the graph.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Connect: Mutually connect all selected vertices.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Disconnect: Mutually disconnect all selected vertices.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Toggle active: Highlight nodes that are not highlighted nodes and
+remove the highlight from highlighted nodes.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	(Note: None of these are available for nodes of transforms.)</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+<BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<B>Creating Transforms</B></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; text-decoration: none"><B><SPAN STYLE="font-style: normal">	</SPAN></B><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Owlgraph
+is built to allow addition of custom transforms written in python and
+using numpy. In order to create a custom transform:</SPAN></SPAN></P>
+<OL>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Transforms are located in src/model/adapter/policy/transforms.
+	First, add a new .py file to this directory (let's call it
+	“myTrans.py”)</P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Copy the contents of identity.py to this new file. This will be the
+	template for the new transform.</P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Edit the “name =” field to the name of your transform. (For
+	example, change it to: 
+	</P>
+	<OL>
+		<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+		name = 'My Transform'</P>
+	</OL>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Add to the __init__ method after the first line to set up the
+	transform's initial environment. (the transform will always have
+	access to the field self.selected, which is a list of the indices of
+	the vertices that were selected to create the transform. It should
+	be noted that Owlgraph will attempt to renumber these vertices if a
+	vertex is removed from the original graph. 
+	</P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Alter the transform method to highlight the desired nodes. The user
+	is given three fields:</P>
+	<OL>
+		<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+		model: a 2-dimensional numpy array representing the graph's
+		adjacency matrix.</P>
+		<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+		active_nodes: A list of nodes that are already highlighted.</P>
+		<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal"><SPAN STYLE="text-decoration: none"><SPAN STYLE="font-weight: normal">active_edges:
+		a list of edges that are already highlighted. Edges are represented
+		as tuples of </SPAN></SPAN></SPAN><SPAN STYLE="font-style: normal"><SPAN STYLE="text-decoration: none"><SPAN STYLE="font-weight: normal">vertex
+		indices, arranged in ascending order.</SPAN></SPAN></SPAN></P>
+	</OL>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	The transform method is expected to return a tuple of two entries:</P>
+	<OL>
+		<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+		A list of nodes to be highlighted after the transform.</P>
+		<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+		A list of edges to be highlighted after the transform. (For
+		convenience,  you may use self.mk_con(index1, index2) to return a
+		proper edge representation given the indices of two nodes.</P>
+		<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+		Other Convenience methods:</P>
+		<OL>
+			<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+			self.path_from_nodes(nodelist) returns a list of edges that
+			represent the path between the nodes given in nodelist in order.</P>
+			<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+			self.all_combinations_from_nodes(nodelist) returns a list of all
+			possible edges between the nodes in nodelist.</P>
+		</OL>
+	</OL>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+	Edit __init__.py and add the base name of your file to the list
+	__all__. (For instance, in our case, add the string, 'myTrans' to
+	the list.</P>
+</OL>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+<BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+Warning: A workspace that employs a given transform must be loaded in
+a copy of owlgraph with the same transform available.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+<BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal; font-weight: normal; text-decoration: none">
+Last updated 1.0.0dev106 
+</P>
+</BODY>
+</HTML>
