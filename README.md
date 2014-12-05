@@ -10,6 +10,9 @@ properties to be composed (i.e. find the minimal spanning tree of the largest
 k-core in a graph.) All of this is packaged into a powerful, intuitive
 interface.
 
+![Using Owlgraph to find largest k-cores of two subgraphs and a spanning tree](owlgraph1.png "Using Owlgraph to find largest k-cores of two subgraphs and a spanning tree")
+![Using Owlgraph to find a shortest path and a spanning tree](owlgraph2.png "Using Owlgraph to find a shortest path and a spanning tree")
+
 Installation
 =======================
 
@@ -41,5 +44,8 @@ Using Owl Graph in Linux:
 Using Owl Graph in OSX:
 
 I hear this is even more of a nightmare than Windows. Good luck. 
+
+Usage
+==============
 
 See doc/help/index.html for usage instructions
